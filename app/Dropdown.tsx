@@ -30,7 +30,7 @@ function Dropdown() {
               className={
                 "origin-top-center " +
                 (mouseOver
-                  ? "animate-[rotateX_300ms_60ms_ease-in-out_forwards]"
+                  ? "animate-[rotateX_300ms_60ms_ease-in-out_both]"
                   : "hidden")
               }
               href="/"
@@ -43,7 +43,7 @@ function Dropdown() {
               className={
                 "origin-top-center " +
                 (mouseOver
-                  ? "animate-[rotateX_300ms_120ms_ease-in-out_forwards]"
+                  ? "animate-[rotateX_300ms_120ms_ease-in-out_both]"
                   : "hidden")
               }
               href="/"
@@ -56,7 +56,7 @@ function Dropdown() {
               className={
                 "origin-top-center " +
                 (mouseOver
-                  ? "animate-[rotateX_300ms_180ms_ease-in-out_forwards]"
+                  ? "animate-[rotateX_300ms_180ms_ease-in-out_both]"
                   : "hidden")
               }
               href="/"

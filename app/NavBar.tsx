@@ -3,9 +3,13 @@
 import Contacts from "./Contacts";
 import Dropdown from "./Dropdown";
 
+const _GITHUB_LINK = "https://github.com/ENamja";
+const _LINKEDIN_LINK = "https://www.linkedin.com/in/elisha-nam/";
+const _EMAIL_LINK = "mailto:namelisha@gmail.com";
+
 function NavBar() {
   return (
-    <div className="flex justify-between my-4 mx-12">
+    <div className="">
       <Dropdown></Dropdown>
       <Contacts></Contacts>
     </div>

@@ -24,20 +24,45 @@ function Dropdown() {
           height="32"
           alt="Menu"
         ></Image>
-        <ul
-          className={
-            "absolute transition-all duration-500 " +
-            (mouseOver ? "" : "text-black")
-          }
-        >
+        <ul className={"absolute " + (mouseOver ? "opacity-1" : "opacity-0")}>
           <li>
-            <Link href="/">Home</Link>
+            <Link
+              className={
+                "origin-top-center " +
+                (mouseOver
+                  ? "animate-[rotateX_300ms_60ms_ease-in-out_forwards]"
+                  : "hidden")
+              }
+              href="/"
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link href="/">Projects</Link>
+            <Link
+              className={
+                "origin-top-center " +
+                (mouseOver
+                  ? "animate-[rotateX_300ms_120ms_ease-in-out_forwards]"
+                  : "hidden")
+              }
+              href="/"
+            >
+              Projects
+            </Link>
           </li>
           <li>
-            <Link href="/">About</Link>
+            <Link
+              className={
+                "origin-top-center " +
+                (mouseOver
+                  ? "animate-[rotateX_300ms_180ms_ease-in-out_forwards]"
+                  : "hidden")
+              }
+              href="/"
+            >
+              About
+            </Link>
           </li>
         </ul>
       </li>

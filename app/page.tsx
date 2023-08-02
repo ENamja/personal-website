@@ -5,48 +5,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return (
-    <div className="text-white text-right text-4xl">
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-      <p>"hello"</p>
-    </div>
-  );
+  return <div className="text-white text-right text-4xl"></div>;
 }

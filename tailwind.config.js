@@ -21,6 +21,9 @@ module.exports = {
           '50%': {transform: 'rotateX(-20deg)'},
           '100': {opacity: '1', transform: 'rotateX(0deg)'}
         }
+      },
+      fontFamily: {
+        'open-sans': ['Open Sans', 'sans-serif'],
       }
     },
   },

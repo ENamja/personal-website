@@ -24,23 +24,21 @@ function Dropdown() {
       </div>
 
       <ul className="text-lg font-normal pl-10 py-2 w-full absolute">
-        {LINKS.map(({ label, href }, i) => {
-          return (
-            <li className="w-full">
-              <Link
-                className={
-                  "w-full origin-top-center group-hover:animate-[rotateX_300ms_ease-in-out_both] hidden group-hover:inline bg-[length:0px_2px] bg-gradient-to-r from-[#49c5b6] to-[#49c5b6] bg-left-bottom bg-no-repeat transition-all duration-500 ease-in-out hover:bg-[length:100%_2px] hover:bg-left-bottom"
-                }
-                href={href}
-                style={{
-                  animationDelay: `${i * 60}ms`,
-                }}
-              >
-                {label}
-              </Link>
-            </li>
-          );
-        })}
+        {LINKS.map(({ label, href }, i) => (
+          <li className="w-full">
+            <Link
+              className={
+                "w-full origin-top-center group-hover:animate-[rotateX_300ms_ease-in-out_both] hidden group-hover:inline bg-[length:0px_2px] bg-gradient-to-r from-[#49c5b6] to-[#49c5b6] bg-left-bottom bg-no-repeat transition-all duration-500 ease-in-out hover:bg-[length:100%_2px] hover:bg-left-bottom"
+              }
+              href={href}
+              style={{
+                animationDelay: `${i * 60}ms`,
+              }}
+            >
+              {label}
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   );

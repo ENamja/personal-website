@@ -12,7 +12,7 @@ function Contacts() {
     <div className="flex text-white items-center fixed top-4 right-4">
       <Link className="mx-4 change-color" href={_GITHUB_LINK} target="_blank">
         <Image
-          src="/../public/transparent-github.png"
+          src="/transparent-github.png"
           width="32"
           height="32"
           alt="GitHub Logo"
@@ -20,7 +20,7 @@ function Contacts() {
       </Link>
       <Link className="mx-4 change-color" href={_LINKEDIN_LINK} target="_blank">
         <Image
-          src="/../public/transparent-linkedin.png"
+          src="/transparent-linkedin.png"
           width="32"
           height="32"
           alt="LinkedIn Logo"
@@ -28,7 +28,7 @@ function Contacts() {
       </Link>
       <Link className="mx-4 change-color" href={_EMAIL_LINK} target="_blank">
         <Image
-          src="/../public/transparent-email1.png"
+          src="/transparent-email1.png"
           width="32"
           height="32"
           alt="Email Logo"

@@ -15,7 +15,7 @@ function Dropdown() {
       <div className="flex flex-row items-center text-lg font-normal">
         <Image
           className="text-md change-color transition-all duration-500 group-hover:-rotate-90"
-          src="/../public/menu-flat.png"
+          src="/menu-flat.png"
           width="32"
           height="32"
           alt="Menu"

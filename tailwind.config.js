@@ -23,7 +23,7 @@ module.exports = {
         rotateX: {
           "0%": { opacity: "0", transform: "rotateX(-90deg)" },
           "50%": { transform: "rotateX(-20deg)" },
-          100: { opacity: "1", transform: "rotateX(0deg)" },
+          "100%": { opacity: "1", transform: "rotateX(0deg)" },
         },
         typing: {
           "0%": { width: "0ch" },

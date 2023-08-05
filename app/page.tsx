@@ -6,20 +6,16 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="text-[#49c5b6] text-center font-light">
-      <h1 className="text-9xl my-12 pt-16 inline-block overflow-hidden whitespace-nowrap animate-typing">
-        &lt;Hello/&gt;
-        <span className="box-border inline-block w-1 h-32 ml-2 -mb-4 bg-white animate-cursor"></span>
-      </h1>
-      <div className="text-6xl">
-        <p className="text-left my-6">
-          &lt; I'm <span className="text-white font-normal">Elisha Nam</span>,
-        </p>
-        <p className="text-right">
-          a <span className="text-white font-normal">Full-Stack Developer</span>{" "}
-          &gt;
-        </p>
+    <>
+      <div className="flex justify-center items-center text-center h-screen">
+        <div className="text-[#49c5b6] font-light inline-block text-9xl">
+          <span className="inline-block overflow-hidden animate-typing">
+            &lt;Hello/&gt;
+          </span>
+          <span className="box-border inline-block w-1 h-32 ml-2 -mb-4 bg-white animate-cursor"></span>
+        </div>
       </div>
-    </div>
+      <div className="w-screen h-screen bg-white"></div>
+    </>
   );
 }

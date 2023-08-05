@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-black mt-16 max-w-4xl mx-auto">
+      <body className="bg-black">
         <NavBar></NavBar>
         {children}
       </body>

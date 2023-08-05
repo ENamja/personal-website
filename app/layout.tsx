@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-black">
+      <body>
         <NavBar></NavBar>
         {children}
       </body>

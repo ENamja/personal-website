@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       animation: {
         cursor: "cursor .6s linear infinite alternate",
-        typing: "typing 1.8s ease-out .8s 1 normal forwards",
+        typing: "typing 1.8s ease-out .8s 1 normal both",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

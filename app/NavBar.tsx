@@ -9,7 +9,7 @@ const _EMAIL_LINK = "mailto:namelisha@gmail.com";
 
 function NavBar() {
   return (
-    <div className="">
+    <div>
       <Dropdown></Dropdown>
       <Contacts></Contacts>
     </div>

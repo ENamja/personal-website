@@ -23,9 +23,19 @@ function NavBar({ theme, setTheme }: NavBarProps) {
 
   return (
     <div>
-      <button onClick={() => handleClick({ theme, setTheme })}>
-        context: {contextTheme} theme: {theme}
-      </button>
+      <div
+        className={
+          "fixed top-0 left-0 w-screen h-16 flex justify-center items-center" +
+          (theme === "dark" ? " bg-black" : " bg-white")
+        }
+      >
+        <button
+          className={theme === "dark" ? "text-white" : "text-black"}
+          onClick={() => handleClick({ theme, setTheme })}
+        >
+          context: {contextTheme} theme: {theme}
+        </button>
+      </div>
       <Dropdown></Dropdown>
       <Contacts></Contacts>
     </div>

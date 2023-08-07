@@ -25,7 +25,10 @@ function Dropdown() {
     >
       <div className="flex flex-row items-center text-lg font-normal">
         <Image
-          className="text-md change-color transition-all duration-500 group-hover:-rotate-90"
+          className={
+            "text-md transition-all duration-500 group-hover:-rotate-90" +
+            (theme === "dark" ? " change-color" : " brightness-0")
+          }
           src="/menu-flat.png"
           width="32"
           height="32"
@@ -39,7 +42,10 @@ function Dropdown() {
           <li key={label} className="w-full">
             <Link
               className={
-                "w-full origin-top-center group-hover:animate-[rotateX_300ms_ease-in-out_both] hidden group-hover:inline bg-[length:0px_2px] bg-gradient-to-r from-[#49c5b6] to-[#49c5b6] bg-left-bottom bg-no-repeat transition-all duration-500 ease-in-out hover:bg-[length:100%_2px] hover:bg-left-bottom focus:bg-[length:100%_2px]"
+                "w-full origin-top-center group-hover:animate-[rotateX_300ms_ease-in-out_both] hidden group-hover:inline bg-[length:0px_2px] bg-gradient-to-r bg-left-bottom bg-no-repeat transition-all duration-500 ease-in-out hover:bg-[length:100%_2px] hover:bg-left-bottom focus:bg-[length:100%_2px]" +
+                (theme === "dark"
+                  ? " from-[#49c5b6] to-[#49c5b6]"
+                  : " from-black to-black")
               }
               href={href}
               style={{

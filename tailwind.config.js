@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       animation: {
         cursor: "cursor .6s linear infinite alternate",
-        typing: "typing 1.8s ease-out .8s 1 normal both",
+        typing: "typing 1.8s ease-out 1.2s 1 normal both",
       },
       transformOrigin: {
         "top-center": "top center",

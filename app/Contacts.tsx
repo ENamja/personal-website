@@ -15,9 +15,7 @@ function Contacts() {
   return (
     <div className="flex text-white items-center fixed top-4 right-4">
       <Link
-        className={
-          "mx-4" + (theme === "dark" ? " change-color" : " brightness-0")
-        }
+        className={"mx-4 brightness-0" + (theme === "dark" ? " invert" : "")}
         href={_GITHUB_LINK}
         target="_blank"
       >
@@ -29,9 +27,7 @@ function Contacts() {
         ></Image>
       </Link>
       <Link
-        className={
-          "mx-4" + (theme === "dark" ? " change-color" : " brightness-0")
-        }
+        className={"mx-4 brightness-0" + (theme === "dark" ? " invert" : "")}
         href={_LINKEDIN_LINK}
         target="_blank"
       >
@@ -43,9 +39,7 @@ function Contacts() {
         ></Image>
       </Link>
       <Link
-        className={
-          "mx-4" + (theme === "dark" ? " change-color" : " brightness-0")
-        }
+        className={"mx-4 brightness-0" + (theme === "dark" ? " invert" : "")}
         href={_EMAIL_LINK}
         target="_blank"
       >

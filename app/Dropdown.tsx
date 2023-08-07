@@ -14,20 +14,18 @@ function Dropdown() {
     { label: "About", href: "/about" },
   ];
 
-  // text-[#49c5b6]
-
   return (
     <div
       className={
-        "fixed top-4 left-8 font-open-sans group" +
-        (theme === "dark" ? " text-[#49c5b6]" : " text-black")
+        "fixed top-4 left-8 font-open-sans group font-semibold" +
+        (theme === "dark" ? " text-white" : " text-black")
       }
     >
-      <div className="flex flex-row items-center text-lg font-normal">
+      <div className="flex flex-row items-center text-lg">
         <Image
           className={
-            "text-md transition-all duration-500 group-hover:-rotate-90" +
-            (theme === "dark" ? " change-color" : " brightness-0")
+            "text-md transition-all duration-500 group-hover:-rotate-90 brightness-0" +
+            (theme === "dark" ? " invert" : "")
           }
           src="/menu-flat.png"
           width="32"
@@ -37,14 +35,14 @@ function Dropdown() {
         <span className="pl-2 pr-6">Menu</span>
       </div>
 
-      <ul className="text-lg font-normal pl-10 py-2 w-full absolute">
+      <ul className="text-lg pl-10 py-2 w-full absolute">
         {LINKS.map(({ label, href }, i) => (
           <li key={label} className="w-full">
             <Link
               className={
                 "w-full origin-top-center group-hover:animate-[rotateX_300ms_ease-in-out_both] hidden group-hover:inline bg-[length:0px_2px] bg-gradient-to-r bg-left-bottom bg-no-repeat transition-all duration-500 ease-in-out hover:bg-[length:100%_2px] hover:bg-left-bottom focus:bg-[length:100%_2px]" +
                 (theme === "dark"
-                  ? " from-[#49c5b6] to-[#49c5b6]"
+                  ? " from-white to-white"
                   : " from-black to-black")
               }
               href={href}

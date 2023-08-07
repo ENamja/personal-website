@@ -15,7 +15,7 @@ function Hello() {
       <div
         className={
           "font-light inline-block text-9xl" +
-          (theme === "dark" ? " text-[#49c5b6]" : " text-black")
+          (theme === "dark" ? " text-white" : " text-black")
         }
       >
         <span className="inline-block overflow-hidden animate-typing">

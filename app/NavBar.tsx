@@ -3,6 +3,7 @@
 import Contacts from "./Contacts";
 import { ThemeContext } from "./Contexts";
 import Dropdown from "./Dropdown";
+import Toggle from "./Toggle";
 import { Dispatch, SetStateAction, useContext } from "react";
 
 const _GITHUB_LINK = "https://github.com/ENamja";
@@ -14,28 +15,12 @@ interface NavBarProps {
   setTheme: Dispatch<SetStateAction<string>>;
 }
 
-function handleClick({ theme, setTheme }: NavBarProps) {
-  theme == "dark" ? setTheme("light") : setTheme("dark");
-}
-
 function NavBar({ theme, setTheme }: NavBarProps) {
   const contextTheme = useContext(ThemeContext);
 
   return (
     <div>
-      <div
-        className={
-          "fixed top-0 left-0 w-screen h-16 flex justify-center items-center" +
-          (theme === "dark" ? " bg-black" : " bg-white")
-        }
-      >
-        <button
-          className={theme === "dark" ? "text-white" : "text-black"}
-          onClick={() => handleClick({ theme, setTheme })}
-        >
-          context: {contextTheme} theme: {theme}
-        </button>
-      </div>
+      <Toggle theme={theme} setTheme={setTheme}></Toggle>
       <Dropdown></Dropdown>
       <Contacts></Contacts>
     </div>

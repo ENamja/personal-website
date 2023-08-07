@@ -3,11 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.change-color {
-  filter: invert(72%) sepia(66%) saturate(356%) hue-rotate(120deg) brightness(84%) contrast(91%);
-  -webkit-filter: invert(72%) sepia(66%) saturate(356%) hue-rotate(120deg) brightness(84%) contrast(91%);
-}
-
 body {
   overflow-x:hidden;
 }

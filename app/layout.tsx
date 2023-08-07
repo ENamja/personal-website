@@ -1,21 +1,23 @@
-import "./globals.css";
-import type { Metadata } from "next";
-import NavBar from "./NavBar";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Elisha Nam - Web Developer",
-};
+import "./globals.css";
+import NavBar from "./NavBar";
+import { ThemeContext } from "./Contexts";
+import { useState } from "react";
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const [theme, setTheme] = useState("dark");
   return (
     <html lang="en">
       <body>
-        <NavBar></NavBar>
-        {children}
+        <ThemeContext.Provider value={theme}>
+          <NavBar theme={theme} setTheme={setTheme}></NavBar>
+          {children}
+        </ThemeContext.Provider>
       </body>
     </html>
   );

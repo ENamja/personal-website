@@ -2,16 +2,27 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useContext } from "react";
+import { ThemeContext } from "./Contexts";
 
 function Dropdown() {
+  const theme = useContext(ThemeContext);
+
   const LINKS = [
     { label: "Home", href: "/" },
     { label: "Projects", href: "/" },
-    { label: "About", href: "/" },
+    { label: "About", href: "/about" },
   ];
 
+  // text-[#49c5b6]
+
   return (
-    <div className="text-[#49c5b6] fixed top-4 left-8 font-open-sans group">
+    <div
+      className={
+        "fixed top-4 left-8 font-open-sans group" +
+        (theme === "dark" ? " text-[#49c5b6]" : " text-black")
+      }
+    >
       <div className="flex flex-row items-center text-lg font-normal">
         <Image
           className="text-md change-color transition-all duration-500 group-hover:-rotate-90"

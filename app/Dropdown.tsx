@@ -32,7 +32,7 @@ function Dropdown() {
           height="32"
           alt="Menu"
         ></Image>
-        <span className="pl-2 pr-6">Menu</span>
+        <span className="duration-500 pl-2 pr-6">Menu</span>
       </div>
 
       <ul className="text-lg pl-10 py-2 w-full absolute">

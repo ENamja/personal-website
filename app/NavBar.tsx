@@ -19,9 +19,9 @@ function NavBar({ theme, setTheme }: NavBarProps) {
   const contextTheme = useContext(ThemeContext);
 
   return (
-    <div>
-      <Toggle theme={theme} setTheme={setTheme}></Toggle>
+    <div className="fixed top-0 left-0 w-screen h-16 py-4 px-6 flex justify-between">
       <Dropdown></Dropdown>
+      <Toggle theme={theme} setTheme={setTheme}></Toggle>
       <Contacts></Contacts>
     </div>
   );

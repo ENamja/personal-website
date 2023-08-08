@@ -13,10 +13,10 @@ function Contacts() {
   const theme = useContext(ThemeContext);
 
   return (
-    <div className="flex text-white items-center fixed top-4 right-4">
+    <div className="flex text-white items-center relative top-0 right-0">
       <Link
         className={
-          "duration-500 mx-4 brightness-0" + (theme === "dark" ? " invert" : "")
+          "duration-500 mx-2 brightness-0" + (theme === "dark" ? " invert" : "")
         }
         href={_GITHUB_LINK}
         target="_blank"
@@ -30,7 +30,7 @@ function Contacts() {
       </Link>
       <Link
         className={
-          "duration-500 mx-4 brightness-0" + (theme === "dark" ? " invert" : "")
+          "duration-500 mx-2 brightness-0" + (theme === "dark" ? " invert" : "")
         }
         href={_LINKEDIN_LINK}
         target="_blank"
@@ -44,7 +44,7 @@ function Contacts() {
       </Link>
       <Link
         className={
-          "duration-500 mx-4 brightness-0" + (theme === "dark" ? " invert" : "")
+          "duration-500 ml-2 brightness-0" + (theme === "dark" ? " invert" : "")
         }
         href={_EMAIL_LINK}
         target="_blank"

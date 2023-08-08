@@ -17,7 +17,7 @@ function Dropdown() {
   return (
     <div
       className={
-        "fixed top-4 left-8 font-open-sans group font-semibold" +
+        "relative top-0 left-0 font-open-sans group font-semibold" +
         (theme === "dark" ? " text-white" : " text-black")
       }
     >

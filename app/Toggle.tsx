@@ -13,7 +13,7 @@ function handleChange({ theme, setTheme }: ToggleProps) {
 
 function Toggle({ theme, setTheme }: ToggleProps) {
   return (
-    <div className="fixed top-0 left-0 w-screen h-16 flex justify-center items-center">
+    <>
       <input
         className="w-0 h-0 hidden"
         type="checkbox"
@@ -30,7 +30,7 @@ function Toggle({ theme, setTheme }: ToggleProps) {
         }
         htmlFor="toggle"
       ></label>
-    </div>
+    </>
   );
 }
 

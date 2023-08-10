@@ -9,7 +9,7 @@ function ProjectList() {
   return (
     <div
       className={
-        "w-screen h-screen" +
+        "w-screen h-screen transition duration-500" +
         (theme === "dark" ? " bg-black text-white" : " bg-white text-black")
       }
     >

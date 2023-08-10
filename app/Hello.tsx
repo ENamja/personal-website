@@ -4,14 +4,9 @@ import { useContext } from "react";
 import { ThemeContext } from "./Contexts";
 
 function Hello() {
-  let theme = useContext(ThemeContext);
+  const theme = useContext(ThemeContext);
   return (
-    <div
-      className={
-        "duration-500 flex justify-center items-center text-center h-screen" +
-        (theme === "dark" ? " bg-black" : " bg-white")
-      }
-    >
+    <>
       <div
         className={
           "duration-500 font-light inline-block text-9xl" +
@@ -28,7 +23,7 @@ function Hello() {
           }
         ></span>
       </div>
-    </div>
+    </>
   );
 }
 

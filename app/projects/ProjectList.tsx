@@ -1,21 +1,21 @@
 "use client";
 
-import { ThemeContext } from "@/app/Contexts";
 import { useContext } from "react";
+import { ThemeContext } from "@/app/Contexts";
 
-function Bio() {
+function ProjectList() {
   const theme = useContext(ThemeContext);
 
   return (
     <div
       className={
-        "duration-500 w-screen h-screen" +
+        "w-screen h-screen" +
         (theme === "dark" ? " bg-black text-white" : " bg-white text-black")
       }
     >
-      About Page
+      Projects Page
     </div>
   );
 }
 
-export default Bio;
+export default ProjectList;

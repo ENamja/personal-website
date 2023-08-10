@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Hello from "./Hello";
+import HomePage from "./HomePage";
 
 export const metadata: Metadata = {
   title: "Elisha Nam - Web Developer",
@@ -7,5 +7,9 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <Hello></Hello>;
+  return (
+    <>
+      <HomePage></HomePage>
+    </>
+  );
 }

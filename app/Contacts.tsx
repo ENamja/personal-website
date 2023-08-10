@@ -13,7 +13,7 @@ function Contacts() {
   const theme = useContext(ThemeContext);
 
   return (
-    <div className="flex text-white items-center relative top-0 right-0">
+    <div className="flex text-white items-center absolute top-4 right-6">
       <Link
         className={
           "duration-500 mx-2 brightness-0" + (theme === "dark" ? " invert" : "")

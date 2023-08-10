@@ -19,7 +19,7 @@ function NavBar({ theme, setTheme }: NavBarProps) {
   const contextTheme = useContext(ThemeContext);
 
   return (
-    <div className="fixed top-0 left-0 w-screen h-16 py-4 px-6 flex justify-between">
+    <div className="fixed top-0 left-0 w-screen h-16 flex justify-center items-center">
       <Dropdown></Dropdown>
       <Toggle theme={theme} setTheme={setTheme}></Toggle>
       <Contacts></Contacts>

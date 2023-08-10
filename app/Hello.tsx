@@ -6,7 +6,7 @@ import { ThemeContext } from "./Contexts";
 function Hello() {
   const theme = useContext(ThemeContext);
   return (
-    <>
+    <div className="z-[100]">
       <div
         className={
           "duration-500 font-light inline-block text-9xl" +
@@ -23,7 +23,7 @@ function Hello() {
           }
         ></span>
       </div>
-    </>
+    </div>
   );
 }
 

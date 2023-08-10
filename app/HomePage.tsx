@@ -1,6 +1,7 @@
 "use client";
 
-import Particles from "./Particles";
+import ParticleBG from "./ParticleBG";
+import { loadFull } from "tsparticles";
 import Hello from "./Hello";
 import { useContext } from "react";
 import { ThemeContext } from "./Contexts";
@@ -14,7 +15,7 @@ function HomePage() {
         (theme === "dark" ? " bg-black" : " bg-white")
       }
     >
-      <Particles></Particles>
+      <ParticleBG></ParticleBG>
       <Hello></Hello>
     </div>
   );

@@ -1,9 +1,8 @@
 "use client";
 
 import ParticleBG from "./ParticleBG";
-import { loadFull } from "tsparticles";
 import Hello from "./Hello";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ThemeContext } from "./Contexts";
 
 function HomePage() {

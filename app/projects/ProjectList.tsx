@@ -7,13 +7,8 @@ function ProjectList() {
   const theme = useContext(ThemeContext);
 
   return (
-    <div
-      className={
-        "w-screen h-screen transition duration-500" +
-        (theme === "dark" ? " bg-black text-white" : " bg-white text-black")
-      }
-    >
-      Projects Page
+    <div>
+      <div></div>
     </div>
   );
 }

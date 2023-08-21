@@ -9,7 +9,7 @@ function Bio() {
   return (
     <div
       className={
-        "duration-500 w-screen h-screen" +
+        "duration-500 w-screen h-screen pt-16" +
         (theme === "dark" ? " bg-black text-white" : " bg-white text-black")
       }
     >

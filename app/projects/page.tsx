@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import ProjectList from "./ProjectList";
+import ProjectPage from "./ProjectPage";
 
 export const metadata: Metadata = {
   title: "Elisha Nam - Web Developer",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 function Projects() {
   return (
     <>
-      <ProjectList></ProjectList>
+      <ProjectPage></ProjectPage>
     </>
   );
 }

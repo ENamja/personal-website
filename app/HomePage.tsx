@@ -2,7 +2,7 @@
 
 import ParticleBG from "./ParticleBG";
 import Hello from "./Hello";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "./Contexts";
 
 function HomePage() {

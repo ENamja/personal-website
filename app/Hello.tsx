@@ -6,10 +6,10 @@ import { ThemeContext } from "./Contexts";
 function Hello() {
   const theme = useContext(ThemeContext);
   return (
-    <div className="z-[100]">
+    <div className="z-[100] whitespace-nowrap">
       <div
         className={
-          "duration-500 font-light inline-block text-9xl" +
+          "duration-500 font-light inline-block text-8xl" +
           (theme === "dark" ? " text-white" : " text-black")
         }
       >
@@ -18,7 +18,7 @@ function Hello() {
         </span>
         <span
           className={
-            "duration-500 box-border inline-block w-1 h-32 ml-2 -mb-4 animate-cursor" +
+            "duration-500 box-border inline-block w-1 h-28 ml-0.5 mr-1.5 -mb-4 animate-cursor" +
             (theme === "dark" ? " bg-white" : " bg-black")
           }
         ></span>

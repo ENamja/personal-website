@@ -10,8 +10,8 @@ function ProjectPage() {
   return (
     <div
       className={
-        "w-screen h-screen transition duration-500 pt-20 text-center text-5xl" +
-        (theme === "dark" ? " bg-black text-white" : " bg-white text-black")
+        "w-screen h-screen transition duration-500 pt-20 text-center text-5xl font-bold" +
+        (theme === "dark" ? " bg-black text-white" : " bg-gray-100 text-black")
       }
     >
       Projects

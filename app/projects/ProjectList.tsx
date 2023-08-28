@@ -2,6 +2,7 @@
 
 import { useContext } from "react";
 import { ThemeContext } from "@/app/Contexts";
+import Link from "next/link";
 
 function ProjectList() {
   const theme = useContext(ThemeContext);
@@ -13,15 +14,23 @@ function ProjectList() {
   ];
 
   return (
-    <div className="flex flex-row">
+    <ul className="flex flex-col items-center mt-8 max-w-full">
       {projects.map((project) => {
         return (
-          <div id={project.name} className="w-[1000]">
-            {project.name} {project.link}
-          </div>
+          <li
+            id={project.name}
+            className={
+              "p-4 my-4 rounded-3xl drop-shadow-lg max-w-[1000px] hover:scale-[1.05] transition-transform duration-200 ease-in-out" +
+              (theme === "dark" ? " bg-black" : " bg-white")
+            }
+          >
+            <Link href={project.link} target="_blank">
+              {project.name} {project.link}
+            </Link>
+          </li>
         );
       })}
-    </div>
+    </ul>
   );
 }
 

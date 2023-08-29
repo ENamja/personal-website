@@ -20,13 +20,21 @@ function ProjectList() {
           <li
             id={project.name}
             className={
-              "p-4 my-4 rounded-3xl drop-shadow-lg max-w-[1000px] hover:scale-[1.05] transition-transform duration-200 ease-in-out" +
-              (theme === "dark" ? " bg-black" : " bg-white")
+              "max-w-[1000px] hover:scale-[1.05] transition-transform duration-200 ease-in-out"
             }
           >
-            <Link href={project.link} target="_blank">
-              {project.name} {project.link}
-            </Link>
+            <div
+              className={
+                "transition-all w-max h-max duration-500 p-4 my-4 rounded-3xl drop-shadow-lg" +
+                (theme === "dark"
+                  ? " bg-gray-800 text-white"
+                  : " bg-white text-black")
+              }
+            >
+              <Link href={project.link} target="_blank">
+                {project.name} {project.link}
+              </Link>
+            </div>
           </li>
         );
       })}

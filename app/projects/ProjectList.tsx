@@ -14,24 +14,23 @@ function ProjectList() {
   ];
 
   return (
-    <ul className="flex flex-col items-center mt-8 max-w-full">
+    <ul className="flex flex-col items-center mt-8 max-w-5xl">
       {projects.map((project) => {
         return (
           <li
             id={project.name}
             className={
-              "max-w-[1000px] hover:scale-[1.05] transition-transform duration-200 ease-in-out"
+              "max-w-full hover:scale-[1.05] transition-transform duration-200 ease-in-out"
             }
           >
             <div
               className={
-                "transition-all w-max h-max duration-500 p-4 my-4 rounded-3xl drop-shadow-lg" +
-                (theme === "dark"
-                  ? " bg-gray-800 text-white"
-                  : " bg-white text-black")
+                "transition-all w-full duration-500 p-4 my-4 rounded-3xl drop-shadow-lg" +
+                (theme === "dark" ? " text-white" : " bg-white text-black")
               }
             >
-              <Link href={project.link} target="_blank">
+              <div className="absolute rounded-3xl top-0 left-0 w-full h-full bg-white opacity-[.10]"></div>
+              <Link href={project.link} target="_blank" className="text">
                 {project.name} {project.link}
               </Link>
             </div>

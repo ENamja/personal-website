@@ -10,7 +10,7 @@ function Bio() {
     <div
       className={
         "duration-500 w-screen h-screen pt-16" +
-        (theme === "dark" ? " bg-black text-white" : " bg-white text-black")
+        (theme === "dark" ? " bg-[#121212] text-white" : " bg-white text-black")
       }
     >
       About Page

@@ -11,7 +11,7 @@ function HomePage() {
     <div
       className={
         "duration-500 flex justify-center items-center text-center w-screen h-screen" +
-        (theme === "dark" ? " bg-black" : " bg-white")
+        (theme === "dark" ? " bg-[#121212]" : " bg-white")
       }
     >
       <ParticleBG></ParticleBG>

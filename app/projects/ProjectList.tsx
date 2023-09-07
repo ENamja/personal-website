@@ -18,9 +18,9 @@ function ProjectList() {
       {projects.map((project) => {
         return (
           <li
-            id={project.name}
+            key={project.name}
             className={
-              "max-w-full hover:scale-[1.05] transition-transform duration-200 ease-in-out"
+              "w-full hover:scale-[1.05] transition-transform duration-200 ease-in-out"
             }
           >
             <div

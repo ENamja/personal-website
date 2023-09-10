@@ -31,7 +31,7 @@ function ProjectList() {
   ];
 
   return (
-    <ul className="flex flex-col items-center mt-8 max-w-5xl w-full">
+    <ul className="flex flex-col items-center my-8 max-w-5xl w-full">
       {projects.map((project) => {
         return (
           <li

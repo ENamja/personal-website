@@ -7,14 +7,31 @@ import Link from "next/link";
 function ProjectList() {
   const theme = useContext(ThemeContext);
   const projects = [
-    { name: "Personal Website", link: "localhost:3000" },
-    { name: "Minesweeper Solver", link: "localhost:3000" },
-    { name: "Apollo", link: "localhost:3000" },
-    { name: "Filler", link: "localhost:3000" },
+    {
+      name: "Personal Website",
+      link: "localhost:3000",
+      description:
+        "This personal website was built as a dynamic extension of my resume, offering a comprehensive overview of my qualifications as a student developer. The site showcases my downloadable up-to-date resume for easy reference, key projects, and skillsets.",
+      tools: ["Next.js", "Node.js", "TailwindCSS", "Typescript", "Vercel"],
+    },
+    {
+      name: "Minesweeper Solver",
+      link: "localhost:3000",
+      description:
+        "This is a Minesweeper-solving algorithm that demonstrates my problem-solving and programming skills. ",
+      tools: ["Python", ""],
+    },
+    {
+      name: "Apollo",
+      link: "localhost:3000",
+      description:
+        "This is a Unity-based educational chemistry game that uses the concept of crafting to teach basic chemical compounds. The game focuses on a spaceman, Apollo, who must deconstruct items to their basic elements to create other needed items to repair his failing spaceship. Through our team's overall problem-solving skills, teamwork, and excellent visuals, our game was awarded first place in HackSoCal 2020.",
+      tools: ["C#", "Unity"],
+    },
   ];
 
   return (
-    <ul className="flex flex-col items-center mt-8 max-w-5xl">
+    <ul className="flex flex-col items-center mt-8 max-w-5xl w-full">
       {projects.map((project) => {
         return (
           <li
@@ -30,8 +47,14 @@ function ProjectList() {
               }
             >
               <div className="absolute rounded-3xl top-0 left-0 w-full h-full bg-white opacity-[.10]"></div>
-              <Link href={project.link} target="_blank" className="text">
-                {project.name} {project.link}
+              <Link
+                href={project.link}
+                target="_blank"
+                className="w-full h-full"
+              >
+                <div className="text-4xl">{project.name}</div>
+                <div className="text-2xl">{project.description}</div>
+                <div className="text-2xl">{project.tools}</div>
               </Link>
             </div>
           </li>

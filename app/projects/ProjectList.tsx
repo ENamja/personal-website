@@ -19,7 +19,7 @@ function ProjectList() {
       link: "localhost:3000",
       description:
         "This is a Minesweeper-solving algorithm that demonstrates my problem-solving and programming skills. ",
-      tools: ["Python", ""],
+      tools: ["Python"],
     },
     {
       name: "Apollo",
@@ -53,10 +53,21 @@ function ProjectList() {
               ></Link>
               <div className="w-full h-full text-left">
                 <div className="mb-4 text-3xl">{project.name}</div>
-                <div className="my-8 font-light text-xl">
+                <div className="my-8 font-light text-lg">
                   {project.description}
                 </div>
-                <div className="font-light text-xl">{project.tools}</div>
+                <div className="font-light text-lg flex flex-wrap w-full">
+                  {project.tools.map((tool) => {
+                    return (
+                      <div key={tool}>
+                        <div></div>
+                        <div className="rounded-3xl py-2 px-4 my-2 mr-2 bg-black">
+                          {tool}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </li>

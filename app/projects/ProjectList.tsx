@@ -12,7 +12,15 @@ function ProjectList() {
       link: "https://github.com/ENamja/personal-website",
       description:
         "The website you are on was built as a dynamic extension of my resume, offering a comprehensive overview of my qualifications as a student developer. The site showcases my downloadable up-to-date resume for easy reference, key projects, and skillsets.",
-      tools: ["Next.js", "Node.js", "TailwindCSS", "Typescript", "Vercel"],
+      tools: [
+        "Next.js",
+        "Node.js",
+        ,
+        "React",
+        "TailwindCSS",
+        "Typescript",
+        "Vercel",
+      ],
     },
     {
       name: "Minesweeper Solver",
@@ -59,9 +67,14 @@ function ProjectList() {
                 <div className="font-light text-lg flex flex-wrap w-full">
                   {project.tools.map((tool) => {
                     return (
-                      <div key={tool}>
+                      <div key={tool} className="z-10">
                         <div></div>
-                        <div className="rounded-3xl py-2 px-4 my-2 mr-2 bg-black">
+                        <div
+                          className={
+                            "rounded-3xl py-2 px-4 my-2 mr-2 border-[1px] border-black" +
+                            (theme === "dark" ? " bg-[#121212]" : " bg-white")
+                          }
+                        >
                           {tool}
                         </div>
                       </div>

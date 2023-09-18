@@ -50,7 +50,7 @@ function ProjectList() {
           >
             <div
               className={
-                "transition-all w-full duration-500 p-8 my-4 rounded-3xl drop-shadow-lg" +
+                "transition-colors w-full duration-500 p-8 my-4 rounded-3xl drop-shadow-lg" +
                 (theme === "dark" ? " text-white" : " bg-white text-black")
               }
             >
@@ -71,7 +71,7 @@ function ProjectList() {
                         <div></div>
                         <div
                           className={
-                            "rounded-3xl py-2 px-4 my-2 mr-2 border-[1px] border-black" +
+                            "transition-all duration-500 rounded-3xl py-2 px-4 my-2 mr-2 border-[1px] border-black" +
                             (theme === "dark" ? " bg-[#121212]" : " bg-white")
                           }
                         >

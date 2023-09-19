@@ -50,14 +50,14 @@ function ProjectList() {
           >
             <div
               className={
-                "transition-colors w-full duration-500 p-8 my-4 rounded-3xl drop-shadow-lg" +
+                "transition-colors w-full duration-100 p-8 my-4 rounded-3xl drop-shadow-lg" +
                 (theme === "dark" ? " text-white" : " bg-white text-black")
               }
             >
               <Link
                 href={project.link}
                 target="_blank"
-                className="absolute rounded-3xl top-0 left-0 w-full h-full bg-white opacity-[.10]"
+                className="absolute rounded-3xl top-0 left-0 w-full h-full bg-white opacity-100"
               ></Link>
               <div className="w-full h-full text-left">
                 <div className="mb-4 text-3xl">{project.name}</div>
@@ -71,7 +71,7 @@ function ProjectList() {
                         <div></div>
                         <div
                           className={
-                            "transition-all duration-500 rounded-3xl py-2 px-4 my-2 mr-2 border-[1px] border-black" +
+                            "transition-colors duration-500 rounded-3xl py-2 px-4 my-2 mr-2 border-[1px] border-black" +
                             (theme === "dark" ? " bg-[#121212]" : " bg-white")
                           }
                         >

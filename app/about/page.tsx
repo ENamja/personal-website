@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Bio from "./Bio";
+import AboutPage from "./AboutPage";
 
 export const metadata: Metadata = {
   title: "Elisha Nam - Web Developer",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 function About() {
   return (
     <>
-      <Bio></Bio>
+      <AboutPage></AboutPage>
     </>
   );
 }

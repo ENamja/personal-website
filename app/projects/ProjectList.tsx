@@ -52,8 +52,8 @@ function ProjectList() {
               className={
                 "transition-colors w-full duration-500 p-8 my-4 rounded-3xl drop-shadow-lg" +
                 (theme === "dark"
-                  ? " bg-[#121212] text-white"
-                  : " bg-white text-black")
+                  ? " bg-[#121212] text-white border-transparent"
+                  : " bg-white text-black border-[#121212]")
               }
             >
               <Link
@@ -61,18 +61,19 @@ function ProjectList() {
                 target="_blank"
                 className="absolute rounded-3xl top-0 left-0 w-full h-full bg-white opacity-10"
               ></Link>
-              <div className="w-full h-full text-left">
+              <div className="w-full h-full text-left border-inherit bg-inherit">
                 <div className="mb-4 text-3xl">{project.name}</div>
                 <div className="my-8 font-light text-lg">
                   {project.description}
                 </div>
-                <div className="font-light text-lg flex flex-wrap w-full">
+                <div className="font-light text-lg flex flex-wrap w-full bg-inherit border-inherit">
                   {project.tools.map((tool) => {
                     return (
-                      <div key={tool} className="z-10">
-                        <div className="rounded-3xl py-2 px-4 my-2 mr-2 border-[1px] border-black z-20">
-                          {tool}
-                        </div>
+                      <div
+                        key={tool}
+                        className="rounded-3xl py-2 px-4 my-2 mr-2 border-[1px] bg-inherit border-inherit z-10"
+                      >
+                        {tool}
                       </div>
                     );
                   })}

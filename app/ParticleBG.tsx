@@ -74,7 +74,7 @@ function ParticleBG() {
                 default: "bounce",
               },
               random: false,
-              speed: 4,
+              speed: 2,
               straight: false,
             },
             number: {
@@ -82,7 +82,7 @@ function ParticleBG() {
                 enable: true,
                 area: 800,
               },
-              value: 40,
+              value: 25,
             },
             opacity: {
               value: 0.5,

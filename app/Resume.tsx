@@ -15,7 +15,7 @@ function Resume() {
           : " text-black border-black")
       }
     >
-      <a href="/vercel.svg" download="test_download">
+      <a href="/Resume(2023).pdf" target="_blank">
         {"Resume  ⤓"}
       </a>
     </div>

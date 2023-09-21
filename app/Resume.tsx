@@ -15,7 +15,7 @@ function Resume() {
           : " text-black border-black")
       }
     >
-      <a href="/Resume(2023).pdf" target="_blank">
+      <a href="/Elisha_Nam_Resume.pdf" target="_blank">
         {"Resume  ⤓"}
       </a>
     </div>

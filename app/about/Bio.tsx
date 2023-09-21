@@ -15,7 +15,7 @@ function Bio() {
     >
       <div className="text-left font-normal text-xl">
         <p className="mb-6">
-          Hello! I'm <span className="font-bold">Elisha Nam</span>, a{" "}
+          Hello! I{"'"}m <span className="font-bold">Elisha Nam</span>, a{" "}
           <span className="font-bold">Computer Science major</span> specializing
           in <span className="font-bold">Intelligent Systems</span> at{" "}
           <span className="font-bold">UC Irvine</span> and am expecting to

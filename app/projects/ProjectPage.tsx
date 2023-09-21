@@ -10,7 +10,7 @@ function ProjectPage() {
   return (
     <div
       className={
-        "w-screen h-full min-h-screen transition duration-500 pt-20 text-center text-5xl font-bold flex flex-col items-center p-4" +
+        "w-screen h-full min-h-screen transition duration-500 pt-20 text-center text-5xl font-bold flex flex-col items-center p-8" +
         (theme === "dark"
           ? " bg-[#121212] text-white"
           : " bg-gray-100 text-black")

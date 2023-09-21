@@ -16,12 +16,14 @@ function Contacts() {
     <div className="flex text-white items-center absolute top-4 right-6">
       <Link
         className={
-          "duration-500 mx-2 brightness-0" + (theme === "dark" ? " invert" : "")
+          "duration-500 mx-2 brightness-0 z-[100]" +
+          (theme === "dark" ? " invert" : "")
         }
         href={_GITHUB_LINK}
         target="_blank"
       >
         <Image
+          className="z-[100]"
           src="/transparent-github.png"
           width="32"
           height="32"
@@ -30,12 +32,14 @@ function Contacts() {
       </Link>
       <Link
         className={
-          "duration-500 mx-2 brightness-0" + (theme === "dark" ? " invert" : "")
+          "duration-500 mx-2 brightness-0 z-[100]" +
+          (theme === "dark" ? " invert" : "")
         }
         href={_LINKEDIN_LINK}
         target="_blank"
       >
         <Image
+          className="z-[100]"
           src="/transparent-linkedin.png"
           width="32"
           height="32"
@@ -44,12 +48,14 @@ function Contacts() {
       </Link>
       <Link
         className={
-          "duration-500 ml-2 brightness-0" + (theme === "dark" ? " invert" : "")
+          "duration-500 ml-2 brightness-0 z-[100]" +
+          (theme === "dark" ? " invert" : "")
         }
         href={_EMAIL_LINK}
         target="_blank"
       >
         <Image
+          className="z-[100]"
           src="/transparent-email1.png"
           width="32"
           height="32"

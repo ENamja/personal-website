@@ -24,7 +24,7 @@ function Dropdown() {
       <div className="flex flex-row items-center text-lg">
         <Image
           className={
-            "text-md transition-all duration-500 group-hover:-rotate-90 brightness-0" +
+            "text-md transition-all duration-500 group-hover:-rotate-90 brightness-0 z-[100]" +
             (theme === "dark" ? " invert" : "")
           }
           src="/menu-flat.png"
@@ -32,15 +32,15 @@ function Dropdown() {
           height="32"
           alt="Menu"
         ></Image>
-        <span className="duration-500 pl-2 pr-6">Menu</span>
+        <span className="duration-500 pl-2 pr-6 z-[100]">Menu</span>
       </div>
 
       <ul className="text-lg pl-10 py-2 w-full absolute">
         {LINKS.map(({ label, href }, i) => (
-          <li key={label} className="w-full">
+          <li key={label} className="w-full z-[100]">
             <Link
               className={
-                "w-full origin-top-center group-hover:animate-[rotateX_300ms_ease-in-out_both] hidden group-hover:inline bg-[length:0px_2px] bg-gradient-to-r bg-left-bottom bg-no-repeat transition-all duration-500 ease-in-out hover:bg-[length:100%_2px] hover:bg-left-bottom focus:bg-[length:100%_2px]" +
+                "w-full origin-top-center z-[100] group-hover:animate-[rotateX_300ms_ease-in-out_both] hidden group-hover:inline bg-[length:0px_2px] bg-gradient-to-r bg-left-bottom bg-no-repeat transition-all duration-500 ease-in-out hover:bg-[length:100%_2px] hover:bg-left-bottom focus:bg-[length:100%_2px]" +
                 (theme === "dark"
                   ? " from-white to-white"
                   : " from-black to-black")

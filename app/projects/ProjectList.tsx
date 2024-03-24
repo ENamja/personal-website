@@ -8,6 +8,22 @@ function ProjectList() {
   const theme = useContext(ThemeContext);
   const projects = [
     {
+      name: "Search Engine",
+      link: "esnam-search.vercel.app",
+      description:
+        "Full stack website showcasing a search engine designed to efficiently handle tens of thousands of web pages in the UCI ICS subdomain. The search engine uses advanced techniques such as tf-idf scoring and page rank algorithms to deliver highly accurate query results. The website utilizes TailwindCSS and React for the frontend, Flask and Redis for backend, and is deployed on Vercel.",
+      tools: [
+        "Flask",
+        "Next.js",
+        "Python",
+        "React",
+        "Redis",
+        "TailwindCSS",
+        "Typescript",
+        "Vercel",
+      ],
+    },
+    {
       name: "Personal Website",
       link: "https://github.com/ENamja/personal-website",
       description:
@@ -15,7 +31,6 @@ function ProjectList() {
       tools: [
         "Next.js",
         "Node.js",
-        ,
         "React",
         "TailwindCSS",
         "Typescript",

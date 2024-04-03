@@ -13,6 +13,9 @@ export default function RootLayout({
   const [theme, setTheme] = useState("dark");
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/icon.svg" type="image/svg" />
+      </head>
       <body>
         <ThemeContext.Provider value={theme}>
           <NavBar theme={theme} setTheme={setTheme}></NavBar>

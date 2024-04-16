@@ -15,25 +15,19 @@ function Bio() {
     >
       <div className="text-left font-normal text-xl">
         <p className="mb-6">
-          Hello! I{"'"}m <span className="font-bold">Elisha Nam</span>, a{" "}
-          <span className="font-bold">Computer Science major</span> specializing
-          in <span className="font-bold">Intelligent Systems</span> at{" "}
-          <span className="font-bold">UC Irvine</span> and am expecting to
-          graduate <span className="font-bold">June 2025</span>.
+          Hello! I{"'"}m Elisha Nam, a Computer Science major specializing in
+          Intelligent Systems at UC Irvine and am expecting to graduate June
+          2025.
         </p>
         <p className="my-6">
-          I am actively{" "}
-          <span className="font-bold">seeking internship opportunities</span>,
-          eager to enhance my programming skills, and to possibly have a hands
-          on experience with artificial intelligence.
+          I am actively seeking internship opportunities, eager to enhance my{" "}
+          programming skills, and to possibly have a hands on experience with
+          artificial intelligence.
         </p>
         <p className="my-6">
           Aside from coding, I like to be relatively active, consistently{" "}
-          <span className="font-bold">weightlifting</span>,{" "}
-          <span className="font-bold">bouldering</span>, and{" "}
-          <span className="font-bold">bowling</span>. However, I do have the
-          occasional urge to try my luck in{" "}
-          <span className="font-bold">first-person shooters</span>.
+          weightlifting, bouldering, and bowling. However, I do have the{" "}
+          occasional urge to try my luck in first-person shooters.
         </p>
       </div>
       <Skills></Skills>

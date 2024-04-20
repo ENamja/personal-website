@@ -8,7 +8,7 @@ function ProjectList() {
   const theme = useContext(ThemeContext);
   const projects = [
     {
-      name: "Search Engine",
+      name: "Redis Optimized Serverless Search Engine",
       link: "http://esnam-search.vercel.app",
       description:
         "Full stack website showcasing a search engine designed to efficiently handle tens of thousands of web pages in the UCI ICS subdomain. The search engine uses advanced techniques such as tf-idf scoring and page rank algorithms to deliver highly accurate query results. The website utilizes TailwindCSS and React for the frontend, Flask and Redis for backend, and is deployed on Vercel.",
@@ -38,7 +38,7 @@ function ProjectList() {
       ],
     },
     {
-      name: "Minesweeper Solver",
+      name: "Comparative Analysis of Various Minesweeper Algorithms",
       link: "https://github.com/ENamja/Minesweeper-Solver",
       description:
         "This is a Minesweeper-solving algorithm that demonstrates my problem-solving and programming skills. The algorithm was a class project for an AI class with the goal of accurately and efficiently solving Minesweeper worlds of varying sizes. Our solution was built through the application of various ideas such as some basic fundamentals of AI like heuristic search, a search algorithm, and even Harvard sentence-reduction logic.",
